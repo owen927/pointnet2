@@ -10,7 +10,7 @@ import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
 sys.path.append(os.path.join(ROOT_DIR, 'utils'))
-import provider
+import utils.provider as provider
 
 def pc_normalize(pc):
     l = pc.shape[0]

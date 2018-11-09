@@ -17,8 +17,8 @@ sys.path.append(BASE_DIR)
 sys.path.append(os.path.join(ROOT_DIR, 'models'))
 sys.path.append(os.path.join(ROOT_DIR, 'utils'))
 import provider
-import modelnet_dataset
-import modelnet_h5_dataset
+import models. as modelnet_dataset
+import models.modelnet_h5_dataset as modelnet_h5_dataset
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--gpu', type=int, default=0, help='GPU to use [default: GPU 0]')
