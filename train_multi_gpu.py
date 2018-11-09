@@ -19,8 +19,8 @@ ROOT_DIR = BASE_DIR
 sys.path.append(BASE_DIR)
 sys.path.append(os.path.join(ROOT_DIR, 'models'))
 sys.path.append(os.path.join(ROOT_DIR, 'utils'))
-import provider
-import tf_util
+import utils.provider as provider
+import utils.tf_util as tf_util
 import modelnet_dataset
 import modelnet_h5_dataset
 

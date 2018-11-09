@@ -8,13 +8,14 @@ import os
 import scipy.misc
 import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(BASE_DIR)
 sys.path.append(BASE_DIR)
 sys.path.append(os.path.join(BASE_DIR, 'models'))
 sys.path.append(os.path.join(BASE_DIR, 'utils'))
 import utils.provider as provider
-import models.show3d_balls as show3d_balls
+import utils.show3d_balls as show3d_balls
 sys.path.append(os.path.join(ROOT_DIR, 'data_prep'))
-import part_dataset
+import part_seg.part_dataset as part_dataset
 
 
 parser = argparse.ArgumentParser()
